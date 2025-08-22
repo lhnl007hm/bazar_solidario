@@ -1,110 +1,80 @@
-<img src="link_to_your_logo_here.png" alt="Bazar Solidário Logo" width="40"> Bazar Solidário
-A complete web application for a Charity Bazaar, built with the MERN stack.
+Bazar Solidário
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js Badge"> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Badge"> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB Badge"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Badge">
 
-<img src="link_to_features_icon.png" alt="Features Icon" width="24"> Key Features
-✔️ User Authentication: Secure registration and login.
-🔑 Item Management: Easily list, create, and manage items for sale or donation.
-🖼️ Image Uploads: Upload images to showcase items.
-💾 Data Storage: Utilizes MongoDB for reliable data persistence.
-🛡️ Secure API: Authentication via JWT.
+This is a complete web application for a Charity Bazaar, built with the MERN stack (MongoDB, Express, React, Node.js). The application allows users to register, log in, and then donate or buy items.
 
-<img src="link_to_tech_icon.png" alt="Tech Stack Icon" width="24"> Tech Stack
-Backend: <img src="link_to_nodejs_icon.png" alt="Node.js Icon" width="20"> Node.js, <img src="link_to_express_icon.png" alt="Express Icon" width="20"> Express, <img src="link_to_mongodb_icon.png" alt="MongoDB Icon" width="20"> MongoDB, JWT, bcryptjs, Multer
+🚀 Key Features
+User Authentication: Secure registration and login with credential validation.
 
-Frontend: <img src="link_to_react_icon.png" alt="React Icon" width="20"> React, Axios
+Item Management: View, create, and manage items for sale or donation.
 
-Containerization: <img src="link_to_docker_icon.png" alt="Docker Icon" width="20"> Docker, Docker Compose
+Image Uploads: Users can upload images to showcase items.
 
-<img src="link_to_rocket_icon.png" alt="Running Icon" width="24"> Getting Started
-Follow these steps to get the application running on your local machine.
+Data Storage: Utilizes MongoDB for robust data persistence.
 
-<img src="link_to_prerequisites_icon.png" alt="Prerequisites Icon" width="24"> Prerequisites
+Secure API: Authentication of protected routes via JWT (JSON Web Tokens).
+
+💻 Tech Stack
+Backend: Node.js, Express, Mongoose, JWT, bcryptjs, Multer
+
+Frontend: React, Axios
+
+Database: MongoDB
+
+Containerization: Docker and Docker Compose
+
+⚙️ How to Run the Project
+Follow these steps to get the complete application running on your local machine.
+
+Prerequisites
 Make sure you have the following installed:
 
-<img src="link_to_nodejs_icon.png" alt="Node.js Icon" width="20"> Node.js (v14+)
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js Badge"> Node.js (version 14+)
 
-<img src="link_to_npm_icon.png" alt="npm Icon" width="20"> npm
+<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="NPM Badge"> npm
 
-<img src="link_to_docker_icon.png" alt="Docker Icon" width="20"> Docker and Docker Compose
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Badge"> Docker and Docker Compose
 
-<img src="link_to_database_icon.png" alt="Database Icon" width="24"> 1. Start the Database
-Open your terminal in the project root (/bazar_solidario) and run:
+1. Start the Database
+Open your terminal in the project's root directory (/bazar_solidario) and run:
 
-```bash
+Bash
+
 docker-compose up -d
-```
-
-This will start the MongoDB container in the background.
-
-<img src="link_to_backend_icon.png" alt="Backend Icon" width="24"> 2. Configure and Start the Backend
-Open a new terminal and navigate to the backend folder:
+2. Configure and Start the Backend
+Open a new terminal and navigate to the backend folder.
 
 Install dependencies:
 
-```bash
-cd backend
+Bash
+
 npm install
-```
+Configure environment variables: Create a .env file in the backend folder with the following variables:
 
-Environment Configuration: Create a .env file in the backend folder:
-
-```
 MONGO_URI=mongodb://localhost:27017/bazar_solidario
 JWT_SECRET=your_secret_key_here
 PORT=5000
-```
+Create the uploads folder:
 
-Replace your_secret_key_here with a secure string!
+Bash
 
-Create uploads directory:
-
-```bash
 mkdir uploads
-```
-
 Start the server:
 
-```bash
+Bash
+
 npm run dev
-```
-
-The backend will run on http://localhost:5000.
-
-<img src="link_to_frontend_icon.png" alt="Frontend Icon" width="24"> 3. Start the Frontend
-Open a third terminal and navigate to the frontend folder:
+3. Start the Frontend
+Open a third terminal and navigate to the frontend folder.
 
 Install dependencies:
 
-```bash
-cd frontend
+Bash
+
 npm install
-```
+Start the application:
 
-Start the app:
+Bash
 
-```bash
 npm start
-```
-
-The React app will usually open in your browser at http://localhost:3000.
-
-<img src="link_to_usage_icon.png" alt="Usage Icon" width="24"> Usage
-Once both the backend and frontend are running, you can:
-
-Register a new user account.
-
-Log in with your credentials.
-
-Browse the list of available items.
-
-Donate new items by filling out the item form and uploading an image.
-
-(Functionality for buying items would be implemented here based on your project's further development.)
-
-Log out of your account.
-
-<img src="link_to_contributing_icon.png" alt="Contributing Icon" width="24"> Contributing
-(Add your contributing guidelines here if you plan to accept contributions.)
-
-<img src="link_to_license_icon.png" alt="License Icon" width="24"> License
-This project is licensed under the MIT License - see the LICENSE file for details.
+The application will start and open in your browser, usually at http://localhost:3000.
