@@ -1,4 +1,4 @@
-Bazar Solidário
+## Bazar Solidário
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js Badge"> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Badge"> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB Badge"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Badge">
 
 This is a complete web application for a Charity Bazaar, built with the MERN stack (MongoDB, Express, React, Node.js). The application allows users to register, log in, and then donate or buy items.
@@ -38,43 +38,52 @@ Make sure you have the following installed:
 1. Start the Database
 Open your terminal in the project's root directory (/bazar_solidario) and run:
 
-Bash
+```bash
 
 docker-compose up -d
 2. Configure and Start the Backend
 Open a new terminal and navigate to the backend folder.
-
+```
 Install dependencies:
 
-Bash
+```bash
 
 npm install
-Configure environment variables: Create a .env file in the backend folder with the following variables:
 
+```
+Configure environment variables: Create a .env file in the backend folder with the following variables:
+```bash
 MONGO_URI=mongodb://localhost:27017/bazar_solidario
 JWT_SECRET=your_secret_key_here
 PORT=5000
+```
 Create the uploads folder:
 
-Bash
+```bash
 
 mkdir uploads
+```
 Start the server:
 
-Bash
+```bash
 
 npm run dev
-3. Start the Frontend
+```
+Start the Frontend
 Open a third terminal and navigate to the frontend folder.
 
 Install dependencies:
 
-Bash
+```bash
 
 npm install
+```
 Start the application:
 
-Bash
+
+```bash
 
 npm start
+```
 The application will start and open in your browser, usually at http://localhost:3000.
+
